@@ -1,0 +1,36 @@
+GET https://localhost:7215/aluno/listar
+###
+
+POST https://localhost:7215/aluno/criar
+content-type: application/json
+
+{
+  "nome": "string",
+  "dataNasc": "10/10/2023"
+}
+#####
+GET https://localhost:7215/imc/listar
+###
+POST https://localhost:7215/imc/criar
+content-type: application/json
+
+{
+  "aluno": {
+    "alunoID": "1",
+  },
+  "altura": "0",
+  "peso": "0"
+}
+
+
+#####
+PUT  https://localhost:7215/imc/criar
+content-type: application/json
+
+{
+  "altura": 10,
+  "peso": 10
+}
+
+
+
